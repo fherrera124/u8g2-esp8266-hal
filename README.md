@@ -2,6 +2,8 @@
 
 ## Note
 This has been tested on [ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK) version 3.4.
+
+### ESP-IDF
 For a version for ESP32 devices using ESP-IDF framework, visit: [u8g2-hal-esp-idf](https://github.com/mkfrey/u8g2-hal-esp-idf)
 
 ## Description
@@ -24,7 +26,7 @@ To use with the ESP8266, we must invoke the `u8g2_esp8266_hal_init()` function b
 this call does is tell the ESP8266 what pins we wish to map.  Here is an example of SPI use:
 
 ```
-u8g2_esp8266_hal_t u8g2_esp8266_hal = U8G2_ESP8266_HAL_DEFAULT;
+u8g2_esp8266_hal_t u8g2_esp8266_hal = {0};
 u8g2_esp8266_hal.clk   = PIN_CLK;
 u8g2_esp8266_hal.mosi  = PIN_MOSI;
 u8g2_esp8266_hal.cs    = PIN_CS;

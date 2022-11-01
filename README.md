@@ -1,9 +1,8 @@
 # U8g2 compatibility component for ESP8266_RTOS_SDK framework
 
-## ESP-IDF version
-For a version for ESP32 devices using ESP-IDF framework, visit:
-
-[u8g2-hal-esp-idf](https://github.com/mkfrey/u8g2-hal-esp-idf)
+## Note
+This has been tested on [ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK) version 3.4.
+For a version for ESP32 devices using ESP-IDF framework, visit: [u8g2-hal-esp-idf](https://github.com/mkfrey/u8g2-hal-esp-idf)
 
 ## Description
 There is an excellent open source library called `u8g2` that can be found on Github here:
@@ -14,7 +13,7 @@ The purpose of the library is to provide a display independent driver layer for 
 The library "knows" how to driver the underlying displays as well as providing drawing primitives including text, fonts, lines and
 other geometrical shapes.
 
-A version of the library is available in cleanly compiling C and compiles without incident on the [ESP8266_RTOS_SDK](https://github.com/espressif/ESP8266_RTOS_SDK) framework.
+A version of the library is available in cleanly compiling C and compiles without incident on the ESP8266_RTOS_SDK framework.
 
 However, since the library is agnostic of MCU environments and will work on a variety of boards, there has to be a mapping from
 the functions expected by the library to the underlying MCU board hardware. This includes driving GPIOs, I2C, SPI and more.
